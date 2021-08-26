@@ -12,7 +12,7 @@ function init_template() {
     );
 }
 
-
+//Manejo de librerías
 function assets() {
     wp_register_style('bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css', '', '4.4.1', 'all');
     wp_register_style('montserrat', 'https://fonts.googleapis.com/css?family=Montserrat&display=swap', '', '1.0', 'all');
@@ -23,6 +23,7 @@ function assets() {
     wp_enqueue_script('custom', get_template_directory_uri() . '/assets/js/custom.js', '', '1.0', true);
 }
 
+//hooks
 add_action('wp_enqueue_scripts', 'assets');
 
 
