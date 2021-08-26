@@ -27,7 +27,7 @@ function assets() {
 //hooks
 add_action('wp_enqueue_scripts', 'assets');
 
-
+//menú principal
 function sidebar() {
     register_sidebar(
         array(
