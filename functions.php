@@ -5,6 +5,7 @@ function init_template() {
     add_theme_support('post-thumbnails');
     add_theme_support('title-tag');
 
+    //Menú principal
     register_nav_menus(
         array(
             'top_menu' => 'Menú Principal'
@@ -27,7 +28,7 @@ function assets() {
 //hooks
 add_action('wp_enqueue_scripts', 'assets');
 
-//menú principal
+//Widgets
 function sidebar() {
     register_sidebar(
         array(
@@ -42,6 +43,7 @@ function sidebar() {
     );
 }
 
+//hooks
 add_action('widgets_init', 'sidebar');
 
 function productos_type() {
