@@ -10,6 +10,7 @@
         <?php    }
     }?>
 
+<!-- Loop -->
     <div class="lista-productos my-5">
         <h2 class='text-center'>PRODUCTOS</h2>
         <div class="row">
