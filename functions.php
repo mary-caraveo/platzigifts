@@ -47,6 +47,7 @@ function sidebar() {
 //hooks
 add_action('widgets_init', 'sidebar');
 
+//Custom Post Type
 function productos_type() {
     $labels = array(
         'name' => 'Productos',
@@ -72,4 +73,5 @@ function productos_type() {
     register_post_type('producto', $args);
 }
 
+//hooks
 add_action('init', 'productos_type');
